@@ -182,35 +182,41 @@ class BinarySearchTree {
     }
 }
 
-function createBST(){
+// function createBST(){
 
-    const BST = new BinarySearchTree()
+//     const BST = new BinarySearchTree()
 
-    // BST.insert(3)
-    // BST.insert(1)
-    // BST.insert(4)
-    // BST.insert(6)
-    // BST.insert(9)
-    // BST.insert(2)
-    // BST.insert(5)
-    // BST.insert(7)
+//     BST.insert(3)
+//     BST.insert(1)
+//     BST.insert(4)
+//     BST.insert(6)
+//     BST.insert(9)
+//     BST.insert(2)
+//     BST.insert(5)
+//     BST.insert(7)
 
-    BST.insert('E')
-    BST.insert('A')
-    BST.insert('S')
-    BST.insert('Y')
-    BST.insert('Q')
-    BST.insert('U')
-    BST.insert('E')
-    BST.insert('S')
-    BST.insert('T')
-    BST.insert('I')
-    BST.insert('O')
-    BST.insert('N')
+//     BST.insert('E')
+//     BST.insert('A')
+//     BST.insert('S')
+//     BST.insert('Y')
+//     BST.insert('Q')
+//     BST.insert('U')
+//     BST.insert('E')
+//     BST.insert('S')
+//     BST.insert('T')
+//     BST.insert('I')
+//     BST.insert('O')
+//     BST.insert('N')
 
 
-    console.log(BST)
-}
+//     console.log(BST)
+// }
 
-createBST()
+// createBST()
 
+
+/* 4. This function uses recursion to find the total sum of the values over the entire tree. The run time would be exponential, O(2^n)
+ */ 
+
+
+//5.
