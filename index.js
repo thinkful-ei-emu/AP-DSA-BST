@@ -180,6 +180,14 @@ class BinarySearchTree {
 
         return this.left._findMin()
     }
+
+    _findMax(){
+        if(!this.right){
+            return this
+        }
+
+        return this.right._findMax()
+    }
 }
 
 // function createBST(){
@@ -220,3 +228,103 @@ class BinarySearchTree {
 
 
 //5.
+
+// function findHeight(tree){
+
+//     if(tree === null){
+//         return 0
+//     }
+
+//     else{
+
+//         let leftTree = findHeight(tree.left)
+//         let rightTree = findHeight(tree.right)
+
+//         let height = Math.max(leftTree, rightTree) + 1
+
+//         return height
+//     }
+   
+// }
+
+const BST = new BinarySearchTree()
+
+    BST.insert(3)
+    BST.insert(1)
+    BST.insert(4)
+    BST.insert(6)
+    BST.insert(9)
+    BST.insert(2)
+    BST.insert(5)
+    BST.insert(7)
+
+// console.log(findHeight(BST))
+
+
+//6.
+
+// let arb = new BinarySearchTree(2)
+
+// arb.left = new BinarySearchTree(4)
+
+// arb.right = new BinarySearchTree(1)
+
+// //console.log(arb)
+
+
+// function checkIfBST(node, min = null, max = null){
+
+//     if(!node){
+//         return true
+//     }
+
+//     if(max !== null && node.key > max){
+//         return false
+//     }
+
+//     if(min !== null && node.key < min){
+//         return false
+//     }
+
+//     const left = checkIfBST(node.left, min, node.key)
+//     //console.log(node.left, `min: ${min}`, `key: ${node.key}`)
+
+//     const right = checkIfBST(node.right, node.key, max)
+//     //console.log(node.left, `max: ${min}`, `key: ${node.key}`)
+
+
+//     return left && right
+// }
+
+// console.log(checkIfBST(BST))
+// console.log(checkIfBST(arb))
+
+//7.
+
+// function findThirdLargest(node){
+
+//     let max = node._findMax()
+
+//     node.remove(max.key)
+    
+//     let secondMax = node._findMax()
+
+//     node.remove(secondMax.key)
+
+//     let thirdMax = node._findMax()
+
+//     return thirdMax.key
+// }
+
+// console.log(findThirdLargest(BST))
+
+
+//8.
+
+function balanced(){
+
+    
+}
+
+balanced()
+
